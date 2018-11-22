@@ -46,6 +46,11 @@ class LocationDetailsViewController: UITableViewController {
         }
         
         dateLabel.text = format(date: Date())
+        
+        // Hide keyboard
+        let gestureRecogizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        gestureRecogizer.cancelsTouchesInView = false
+        tableView.addGestureRecognizer(gestureRecogizer)
     }
 
     // MARK: - Actions
@@ -77,6 +82,20 @@ class LocationDetailsViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if indexPath.section == 0 || indexPath.section == 1 {
+            return indexPath
+        } else {
+            return nil
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 && indexPath.row == 0 {
+            descriptionTextView.becomeFirstResponder()
+        }
+    }
+    
     // MARK: - Prviate Methods
     func string(from placemark: CLPlacemark) -> String {
         var text = ""
@@ -104,6 +123,16 @@ class LocationDetailsViewController: UITableViewController {
     
     func format(date: Date) -> String {
         return dateFormatter.string(from: date)
+    }
+    
+    @IBAction func hideKeyboard(_ sender: UIGestureRecognizer) {
+        let point = sender.location(in: tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        
+        if indexPath != nil && indexPath!.section == 0 && indexPath!.row == 0 {
+            return
+        }
+        descriptionTextView.resignFirstResponder()
     }
     
     // MARK: - Navigation
