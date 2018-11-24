@@ -13,8 +13,10 @@
 		EE16B63221A1AF78002C395F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE16B63021A1AF78002C395F /* Main.storyboard */; };
 		EE16B63421A1AF7A002C395F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE16B63321A1AF7A002C395F /* Assets.xcassets */; };
 		EE16B63721A1AF7A002C395F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE16B63521A1AF7A002C395F /* LaunchScreen.storyboard */; };
+		EE2BAF1D21A7D8FA00C7C182 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2BAF1C21A7D8FA00C7C182 /* HudView.swift */; };
 		EE5A5FD621A5303700E3A5B6 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A5FD521A5303700E3A5B6 /* LocationDetailsViewController.swift */; };
 		EE5E73D421A5A7C5009582C8 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E73D321A5A7C5009582C8 /* CategoryPickerViewController.swift */; };
+		EE9C077F21A8F822002A13F7 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C077E21A8F822002A13F7 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		EE16B63321A1AF7A002C395F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE16B63621A1AF7A002C395F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE16B63821A1AF7A002C395F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2BAF1C21A7D8FA00C7C182 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		EE5A5FD521A5303700E3A5B6 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		EE5E73D321A5A7C5009582C8 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
+		EE9C077E21A8F822002A13F7 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				EE16B62C21A1AF78002C395F /* CurrentLocationViewController.swift */,
 				EE16B62E21A1AF78002C395F /* SecondViewController.swift */,
 				EE5A5FD521A5303700E3A5B6 /* LocationDetailsViewController.swift */,
+				EE9C077E21A8F822002A13F7 /* Functions.swift */,
+				EE2BAF1C21A7D8FA00C7C182 /* HudView.swift */,
 				EE5E73D321A5A7C5009582C8 /* CategoryPickerViewController.swift */,
 				EE16B63021A1AF78002C395F /* Main.storyboard */,
 				EE16B63321A1AF7A002C395F /* Assets.xcassets */,
@@ -146,6 +152,8 @@
 			files = (
 				EE5A5FD621A5303700E3A5B6 /* LocationDetailsViewController.swift in Sources */,
 				EE16B62F21A1AF78002C395F /* SecondViewController.swift in Sources */,
+				EE2BAF1D21A7D8FA00C7C182 /* HudView.swift in Sources */,
+				EE9C077F21A8F822002A13F7 /* Functions.swift in Sources */,
 				EE16B62B21A1AF78002C395F /* AppDelegate.swift in Sources */,
 				EE5E73D421A5A7C5009582C8 /* CategoryPickerViewController.swift in Sources */,
 				EE16B62D21A1AF78002C395F /* CurrentLocationViewController.swift in Sources */,

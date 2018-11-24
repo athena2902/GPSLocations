@@ -55,7 +55,14 @@ class LocationDetailsViewController: UITableViewController {
 
     // MARK: - Actions
     @IBAction func done() {
-        navigationController?.popViewController(animated: true)
+        let hudView = HudView.hud(inView: navigationController!.view, animated: true)
+        hudView.text = "Tagged"
+        
+        let deleyInSeconds = 0.5
+        afterDepley(deleyInSeconds) {
+            hudView.hide()
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     @IBAction func cancel() {
